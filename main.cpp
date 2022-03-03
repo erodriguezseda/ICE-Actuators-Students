@@ -56,7 +56,7 @@ int main()
     //Once we have a correct frequency
     float Ts = 1.0/freq; //Set period between executions (inverse of frequency)
     //[Insert] Provide instructions to user... like how to stop the program
-    wait(2);     //Allow sometime in between (a time buffer)
+    thread_sleep_for(2000);     //Allow sometime in between (a time buffer)
     t.start();   //Initialize timers
     tlog.start();
     
